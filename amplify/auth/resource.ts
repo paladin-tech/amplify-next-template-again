@@ -8,13 +8,16 @@ export const auth = defineAuth({
   loginWith: {
     email: true,
   },
-  groups: ["ADMINS", "USERS"],
   userAttributes: {
     familyName: {
       mutable: true,
       required: true,
     },
     givenName: {
+      mutable: true,
+      required: true,
+    },
+    phoneNumber: {
       mutable: true,
       required: true,
     },
